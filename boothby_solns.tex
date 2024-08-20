@@ -1,0 +1,115 @@
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usetikzlibrary{shapes.geometric,arrows,fit,matrix,positioning}
+\tikzset
+{
+	treenode/.style = {circle, draw=black, align=center,
+		minimum size=1cm, anchor=center},
+}
+
+
+
+\usepackage[none]{hyphenat}
+\usepackage[margin=1in]{geometry}
+\usepackage{algorithm}
+\usepackage{cancel}
+\usepackage{multirow}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{qtree}
+\usepackage{venndiagram}
+\usepackage{mathtools}
+\usetikzlibrary{datavisualization}
+\usetikzlibrary{datavisualization.formats.functions}
+\newtheorem*{theorem*}{Theorem}
+\usepackage{pgfplots}
+\usepackage{ulem}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage[noend]{algpseudocode}
+\usetikzlibrary{arrows,automata,positioning}
+\usetikzlibrary{arrows,positioning,shapes,fit,calc}
+\usetikzlibrary{chains,fit,shapes}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor=black,  %choose some color if you want links to stand out
+}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\usepackage{color}
+\usepackage{bold-extra}
+\usepackage{dsfont}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{
+	language=python, % Replace
+	basicstyle={\footnotesize\ttfamily},
+	keywordstyle={\bfseries\color{blue}},
+	commentstyle=\color{dkgreen},
+	stringstyle={\slshape\color{mauve}},
+	numberstyle=\footnotesize,
+	numbers=left,
+	showstringspaces=false,
+	breaklines=true,
+	tabsize=4,
+	frame=tb
+}
+
+
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\newcommand{\rowSpace}{1.2ex}
+\newcommand{\Tr}{\text{Tr}}
+\newcommand{\On}{\text{O}(n)}
+\newcommand{\SOn}{\text{SO}(n)}
+\newcommand{\un}{\text{U}(n)}
+\newcommand{\sun}{\text{SU}(n)}
+\newcommand{\una}{\mathfrak{u(n)}}
+\newcommand{\suna}{\mathfrak{su(n)}}
+\singlespacing
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{lemma}
+\begin{document} 
+	
+	\vspace*{20mm}
+	
+	\begin{center}
+		\Huge{Solutions to Boothby's Intro to Differentiable Manifolds}\\
+		
+		\vspace{10mm}
+		
+		\Huge{Notes and Exercises}\\
+		
+		\vspace{10mm}
+		
+		\huge{Blake Cecil \& Curtis Michels}
+		
+	\end{center}
+	
+	
+	\newpage 
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\section{Chapter 1}
+	
+	\begin{questions}
+		\question Prove the discrete and trivial topoligies are indeed topologies.
+	\end{questions}
+	
+	
+\end{document}
